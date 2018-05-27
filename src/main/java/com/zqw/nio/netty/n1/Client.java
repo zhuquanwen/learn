@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("localhost", 8000);
+        Socket socket = new Socket("localhost", 7777);
         socket.getOutputStream().write("i am zhu".getBytes());
         byte[] bytes = new byte[1024];
         socket.getInputStream().read(bytes);
